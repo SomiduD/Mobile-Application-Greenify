@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../features/auth/screens/login_screen.dart';
 import '../../features/auth/screens/signup_screen.dart';
+import '../../features/home/screens/main_layout.dart'; // Add this import
 
 class AppRoutes {
   static const String login = '/login';
@@ -11,7 +12,7 @@ class AppRoutes {
     return {
       login: (context) => const LoginScreen(),
       signup: (context) => const SignupScreen(),
-      home: (context) => const Scaffold(body: Center(child: Text('Home Dashboard Soon'))),
+      home: (context) => const MainLayout(),
     };
   }
 }
